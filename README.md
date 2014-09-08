@@ -1,7 +1,7 @@
-steps-mini-script
+steps-bash-script
 =================
 
-Saves it's input as a bash file and runs it. Roll your own, custom mini-scripts with this Bitrise Step!
+Saves it's input as a bash file and runs it. Roll your own, custom bash scripts with this Bitrise Step!
 
 
 ## Input:
