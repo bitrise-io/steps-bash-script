@@ -2,6 +2,9 @@
 
 set -e
 
+echo
+echo "==> Start"
+
 if [ ! -z "${BASH_SCRIPT_WORKING_DIR}" ] ; then
 	echo "Switching to working directory: ${BASH_SCRIPT_WORKING_DIR}"
 	cd "${BASH_SCRIPT_WORKING_DIR}"
