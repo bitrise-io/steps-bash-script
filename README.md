@@ -7,8 +7,10 @@ This Step is part of the [Open StepLib](http://www.steplib.com/), you can find i
 
 
 ## Input:
-- `__INPUT_FILE__` containing the content of the script
+- Check the `step.yml` file.
 
 
 ## Notes:
-- `__INPUT_FILE__` is a special Bitrise input. Bitrise will write the value into a file and provide the file's path for the Step instead of providing the value directly.
+
+- instead of `__INPUT_FILE__` you should now use the new `content` input to define the content of the script.
+- **DEPRECATED** `__INPUT_FILE__` is a special Bitrise input. Bitrise will write the value into a file and provide the file's path for the Step instead of providing the value directly.
