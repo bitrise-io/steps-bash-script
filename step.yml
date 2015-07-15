@@ -8,7 +8,6 @@ fork_url: https://github.com/bitrise-io/steps-bash-script
 source:
   git: https://github.com/bitrise-io/steps-bash-script.git
 host_os_tags:
-  - osx-10.9
   - osx-10.10
 project_type_tags: []
 type_tags:
@@ -17,17 +16,29 @@ type_tags:
   - runner
 is_requires_admin_user: true
 inputs:
-  - 
-    mapped_to: __INPUT_FILE__
+  -
+    mapped_to: content
     title: "Type your bash script here"
     description: |
-      max 64 000 characters
+      Content of the script.
     is_expand: false
     value: |
       #!/bin/bash
 
       echo "Hello World"
     is_required: true
+  -
+    mapped_to: __INPUT_FILE__
+    title: "Type your bash script here [deprecated]"
+    description: |
+      This input was kept for backward compatibility,
+      you should use the new `content` input instead.
+    is_expand: false
+    value: |
+      #!/bin/bash
+
+      echo "Hello World"
+    is_required: false
   -
     mapped_to: BASH_SCRIPT_WORKING_DIR
     title: "Working directory"
